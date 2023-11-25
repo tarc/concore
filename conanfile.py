@@ -40,7 +40,7 @@ class ConcoreRecipe(ConanFile):
 
    def build_requirements(self):
       if not self.options.no_tbb:
-         self.test_requires("onetbb/[>=2021.10.0]")
+         self.test_requires("onetbb/2021.10.0")
 
       if self._run_tests:
          self.test_requires("catch2/2.13.7")
